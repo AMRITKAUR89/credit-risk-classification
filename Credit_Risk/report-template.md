@@ -27,16 +27,23 @@ Assessed the model’s performance using accuracy, precision, and recall metrics
 
 ## Results
 
-Using bulleted lists, describe the accuracy scores and the precision and recall scores of all machine learning models.
+- Logistic Regression Model Performance
+     -Accuracy Score: 0.99
 
-* Machine Learning Model 1:
-    * Description of Model 1 Accuracy, Precision, and Recall scores.
+- Precision Scores:
+   - Healthy Loans (0): 1.00
+   - High-Risk Loans (1): 0.84
+     
+- Recall Scores:
+   - Healthy Loans (0): 0.99
+   - High-Risk Loans (1): 0.94
 
 ## Summary
 
-Summarise the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
+The logistic regression model performs exceptionally well for healthy loans (0), achieving perfect precision and near-perfect recall. This ensures that the model confidently and accurately identifies healthy loans. For high-risk loans (1), the model achieves strong recall, successfully identifying 94% of actual high-risk loans. However, its precision for high-risk loans is slightly lower at 0.84, indicating that some healthy loans are misclassified as high-risk.
 If you do not recommend any of the models, please justify your reasoning.
+
+## Recommendation
+This model is recommended for deployment due to its overall strong performance and high accuracy. Its ability to correctly classify most high-risk loans is particularly valuable for minimizing financial losses. While slightly lower precision for high-risk loans means some false positives, this trade-off is acceptable given the model’s high recall, ensuring the majority of high-risk loans are flagged. Further enhancements, such as addressing class imbalance with oversampling or class weighting, could improve precision for high-risk loans in future iterations.
+
+By effectively predicting loan outcomes, this model can support data-driven decision-making and risk management within the company.
