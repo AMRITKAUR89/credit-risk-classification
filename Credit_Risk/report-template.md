@@ -1,14 +1,30 @@
-# Module 12 Report Template
+# Module 12 Report 
 
 ## Overview of the Analysis
+The goal of this analysis was to evaluate machine learning models for predicting loan outcomes, focusing on identifying healthy loans (0) and high-risk loans (1). This analysis aimed to help the company mitigate financial risks by accurately classifying high-risk loans.
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+The goal of this analysis was to evaluate machine learning models for predicting loan outcomes, focusing on identifying healthy loans (0) and high-risk loans (1). This analysis aimed to help the company mitigate financial risks by accurately classifying high-risk loans.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithm).
+### Dataset Overview
+- Financial Information: The dataset contained information about loan applicants, including loan features and risk status.
+- Prediction Goal: Predict whether a loan is high-risk (1) or healthy (0).
+- Target Variable: loan_status
+- Distribution:
+  - - 0 (Healthy Loans): Majority class.
+- - 1 (High-Risk Loans): Minority class.
+
+### Stages of Machine Learning Process
+- Data Preparation:
+
+Cleaned and preprocessed data to handle missing values and imbalances.
+Split data into training and testing sets using an 80/20 split.
+Model Training:
+
+Applied Logistic Regression as the primary classification algorithm.
+Model Evaluation:
+
+Assessed the model’s performance using accuracy, precision, and recall metrics to determine how well it predicts both loan categories.
+
 
 ## Results
 
