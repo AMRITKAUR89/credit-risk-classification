@@ -10,19 +10,18 @@ The goal of this analysis was to evaluate machine learning models for predicting
 - Prediction Goal: Predict whether a loan is high-risk (1) or healthy (0).
 - Target Variable: loan_status
 - Distribution:
-  - - 0 (Healthy Loans): Majority class.
-- - 1 (High-Risk Loans): Minority class.
+   - 0 (Healthy Loans): Majority class.
+   - 1 (High-Risk Loans): Minority class.
 
 ### Stages of Machine Learning Process
 - Data Preparation:
-
 Cleaned and preprocessed data to handle missing values and imbalances.
 Split data into training and testing sets using an 80/20 split.
-Model Training:
 
+- Model Training:
 Applied Logistic Regression as the primary classification algorithm.
-Model Evaluation:
 
+- Model Evaluation:
 Assessed the model’s performance using accuracy, precision, and recall metrics to determine how well it predicts both loan categories.
 
 
